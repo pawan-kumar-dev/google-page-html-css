@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GOOGLE PAGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                text-align: center;
+                width:100%;
+                margin: 0;
+            }
+            #top-bar{
+                width: 100%;
+                height: 30px;
+            }
+            #nav-bar{
+                float: right;
+            }
+            #dp{
+                height: 25px;
+                width: 25px;
+                cursor: pointer;
+            }
+            #menu-pic{
+                height: 25px;
+                width: 25px;
+                cursor: pointer;
+            }
+            .nav-menu{
+                display:inline-block;
+                margin: 10px;
+            }
+            .nav-menu img:last-of-type{
+                margin-right: 10px;
+            }
+            .nav-menu:first-of-type,.nav-menu:nth-of-type(2){
+                font-size: 18px;
+                position: relative;
+                top:-6.5px;
+            }
+            .gmail-text:hover{
+                cursor: pointer;
+                text-decoration:underline;
+            }
+            #drop{
+                width: 320px;
+                height: 250px;
+                background-color:white;
+                position: absolute;
+                top:30px;
+                right: 83px;
+                border:2px solid lightgray;
+                text-align: center;
+                display: none;
+            }
+            #dropdown-container:hover #drop{
+                display: block;
+                box-shadow: 2px 0px 10px #ccc;
+            }
+            ul{
+                list-style-type: none;
+                padding-left: 0;
+            }
+            .logo{
+                width: 100%;
+                height: auto;
+            }
+            .gmenu{
+                display: inline-block;
+                height: 80px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid transparent;
+                width: 60px;
+            }
+            .gmenu:hover{
+                border:1px solid #ccc;
+                cursor: pointer;
+            }
+            #search-box{
+                width: 60%;
+                height: 30px;
+                border-radius: 20px;
+                outline: none;
+                margin-bottom: 20px;
+                 border: 1px solid #ccc;
+                 font-size: 30px;
+            }
+            #search-box:focus,#search-box:hover{
+               box-shadow: 2px 0px 10px #ccc;
+            }
+            #pic-container{
+                margin-top: 100px;
+                margin-bottom: 40px;
+                width: 50%;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #google-pic{
+                width: 100%;
+                height: auto;
+            }
+            .btn{
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid transparent;
+            }
+            .btn:hover{
+                border:1px solid #ccc;
+            }
+            footer{
+                margin-top: 180px;
+                width: 100%;
+                border: 1px solid #ccc;
+                box-shadow: 2px 2px 5px #ccc;
+                font-size: 20px;
+                line-height: 1.5;
+                font-family:cursive;
+            }
+            footer span:first-of-type{
+                display: block;
+            }
+            #input-container>img{
+                position: absolute;
+                right: 200px;
+                width: 33px;
+                height: 33px;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="top-bar">
+            <nav id="nav-bar">
+                <div class="nav-menu"><span class="gmail-text">Gmail</span></div>
+                <div class="nav-menu"><span class="gmail-text">Images</span></div>
+                <div class="nav-menu" id="dropdown-container"><img id="menu-pic" src="https://static.thenounproject.com/png/756729-200.png" alt="menu-pic"/>
+                    <div id="drop">
+                        <ul>
+                            <li class="gmenu"><img class="logo" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"/><span>Search</span></li>
+                            <li class="gmenu"><img class="logo" src="http://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png"/><span>Maps</span></li>
+                            <li class="gmenu"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png"/><span>Drive</span></li>
+                            <li class="gmenu"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Google_Calendar_icon.svg/1200px-Google_Calendar_icon.svg.png"/><span>Calendar</span></li>
+                            <li class="gmenu"><img class="logo" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"/><span>Photos</span></li>
+                            <li class="gmenu"><img class="logo" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"/><span>Keep</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-menu"><img id="dp" src="https://pluspng.com/img-png/google-logo-png-open-2000.png" alt="Display Picture"/></div>
+            </nav>
+        </header>
+        <main>
+            <section id="pic-container">
+                <img id="google-pic" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Google_wordmark.gif" alt="Google-pic"/>
+            </section>
+            <section>
+                <form>
+                    <div id="input-container"><input id="search-box" type="text"/>
+                        <img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"/></div>
+                    <div>
+                        <button class="btn">Google Search</button>
+                        <button class="btn">I'm Felling Lucky</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <span>Prepared and Designed by pavanv88</span>
+                <span><a href="https://www.instagram.com/pavanv88/"/>Follow me on Instagram</a></span>
+            </div>
+        </footer>
+    </body>
+</html>
+            
